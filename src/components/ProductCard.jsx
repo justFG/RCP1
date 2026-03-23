@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => {
       {/* Button */}
       <button
         onClick={handleViewDetails}
-        className="mt-auto bg-purple-600/90 text-white py-2.5 rounded-lg
+        className="mt-auto cursor-pointer bg-purple-600/90 text-white py-2.5 rounded-lg
                hover:bg-purple-700 transition-colors"
       >
         View Details
