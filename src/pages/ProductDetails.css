@@ -1,0 +1,201 @@
+/* Color Palette - The Blast Design */
+:root {
+    --dark-blue: #081637;
+    --red-accent: #C70431;
+    --cyan-main: #19CEE4;
+    --bright-text: #F5F5F5;
+    --navbar-dark: #001433;
+}
+
+/* Background Logic */
+.main-bg {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--red-accent) 100%);
+    min-height: 100vh;
+    padding: 60px 20px;
+    color: var(--bright-text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Navigation Button */
+.back-btn-modern {
+    background: transparent;
+    color: var(--bright-text);
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-family: 'Impact', sans-serif;
+    /* Matching secondary headers */
+}
+
+.back-btn-modern:hover {
+    background: var(--bright-text);
+    color: var(--dark-blue);
+    transform: translateX(-5px);
+}
+
+/* Main Card */
+.details-card-modern {
+    background: rgba(0, 20, 51, 0.85);
+    /* Navbar main color */
+    border: 1px solid rgba(25, 206, 228, 0.2);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    /* Section image vs section info */
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
+/* Image Section */
+.details-image-section {
+    background: white;
+    /* Clean contrast for laptops */
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-image-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.details-image-section:hover img {
+    transform: scale(1.08);
+}
+
+/* Info Section */
+.details-info-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-font {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    color: var(--bright-text);
+}
+
+.price-tag {
+    font-size: 2.2rem;
+    color: var(--cyan-main);
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.divider {
+    height: 4px;
+    background: var(--cyan-main);
+    width: 60px;
+    margin: 25px 0;
+}
+
+.secondary-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    /* Soft grey text */
+    margin-bottom: 30px;
+}
+
+/* Technical Specs Box */
+.features-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--cyan-main);
+    margin-bottom: 30px;
+}
+
+.sub-header-font {
+    font-family: 'Impact', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: var(--bright-text);
+}
+
+.features-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features-box li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+/* Cyan Button Style */
+.main-btn-cyan {
+    background: var(--cyan-main);
+    color: var(--navbar-dark);
+    border: none;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+    /* Push to bottom */
+    transition: all 0.3s ease;
+    font-family: 'Impact', sans-serif;
+}
+
+.main-btn-cyan:hover {
+    box-shadow: 0 0 30px rgba(25, 206, 228, 0.6);
+    transform: translateY(-3px);
+    background: #1be2fc;
+}
+
+/* Success State */
+.btn-success {
+    background: #10b981 !important;
+    /* Green */
+    color: white !important;
+}
+
+/* Error 404 styling */
+.not-found {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 100px;
+}
+
+/* Responsive Logic */
+@media (max-width: 900px) {
+    .details-card-modern {
+        grid-template-columns: 1fr;
+    }
+
+    .details-image-section {
+        padding: 30px;
+    }
+
+    .details-info-section {
+        padding: 35px;
+    }
+
+    .header-font {
+        font-size: 2rem;
+    }
+}

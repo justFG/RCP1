@@ -1,0 +1,76 @@
+.products-page {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to top left, #081637, #ddc9ce, #fdf6f6);
+  background-attachment: fixed;
+}
+
+.products-title {
+  font-family: 'Tw Cen MT', 'Impact', 'Arial Black', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #001433, #C70431);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-top: 40px;
+  animation: gradientMove 3s linear infinite, fadeIn 1s ease-out;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .products-title {
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+  
+  .products-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-page {
+    min-height: 100vh;
+  }
+  
+  .products-title {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  
+  .products-grid {
+    gap: 15px;
+  }
+}
