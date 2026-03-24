@@ -1,8 +1,9 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <div><Navbar hp={true}/></div>
   )
 }
 
