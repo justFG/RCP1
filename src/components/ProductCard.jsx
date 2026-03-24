@@ -49,11 +49,9 @@ const ProductCard = ({ product }) => {
 
       {/* Button */}
       <button
-        onClick={() => navigate(`/products/${product.id}`)}
-        className="mt-auto py-2.5 rounded-lg text-sm font-semibold
-                   text-[#001433] bg-[#19CEE4]
-                   hover:bg-[#0fb8d2]
-                   transition-colors duration-200"
+        onClick={handleViewDetails}
+        className="mt-auto cursor-pointer bg-purple-600/90 text-white py-2.5 rounded-lg
+               hover:bg-purple-700 transition-colors"
       >
         View Details
       </button>
