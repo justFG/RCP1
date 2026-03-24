@@ -8,6 +8,9 @@ const ProductCard = ({ product }) => {
     () => product.price.toLocaleString(),
     [product.price]
   );
+  const handleViewDetails = () => {
+    navigate(`/products/${product.id}`);
+  };
 
   return (
     <div
