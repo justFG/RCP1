@@ -14,9 +14,9 @@ const ProductCard = ({ product }) => {
 
   return (
     <div
-      className="w-full max-w-[380px] rounded-2xl p-6 flex flex-col
+      className="w-full max-w-95 rounded-2xl p-6 flex flex-col
                  border border-white/5
-                 bg-gradient-to-br from-[#081637] to-[#C70431]
+                 bg-linear-to-br from-[#081637] to-[#C70431]
                  shadow-lg hover:shadow-xl
                  hover:scale-[1.02]
                  transition-transform duration-200"
@@ -42,7 +42,7 @@ const ProductCard = ({ product }) => {
       </p>
 
       {/* Divider */}
-      <div className="h-px mb-3 bg-gradient-to-r from-[#C70431] to-transparent opacity-60" />
+      <div className="h-px mb-3 bg-linear-to-r from-[#C70431] to-transparent opacity-60" />
 
       {/* Price */}
       <p className="text-white text-xl font-extrabold mb-4">
