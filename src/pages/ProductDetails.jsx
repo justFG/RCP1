@@ -112,7 +112,7 @@ const ProductDetails = () => {
 
     const handleAddToCart = () => {
         setAdded(true);
-        setTimeout(() => setAdded(false), 2000);
+
         alert(`${product.name} added to cart!`);
     };
 
