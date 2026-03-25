@@ -8,7 +8,7 @@ const Homepage = () => {
   const navigate = useNavigate();
 
   return (<>
-    <Navbar />
+    <Navbar hp={true}/>
     <div className="relative  bg-linear-to-tl from-[#C70431] via-[#081637] to-[#081637] h-screen pt-25">
       <div
         className="absolute inset-0 pointer-events-none"
