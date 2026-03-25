@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar';
 import headerImage from '../images/homeImages/asus.webp'
-import Footer from "../components/footer/Footer"
 import { useNavigate } from "react-router-dom";
 
 
