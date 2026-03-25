@@ -2,31 +2,33 @@ import React from "react";
 import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 
-const Navbar = ({ hp, pr }) => {
+const Navbar = ({ hp, pr,ab }) => {
   const [Menu, setMenu] = useState(false);
- 
+  
   return (
     <>
       <nav>
-        <div className="hidden md:flex h-18 bg-white items-center text-l gap-3 pl-15 justify-between shadow">
-          <div className="flex gap-5">
-          <a className={`transition duration-200 p-2 rounded-md ${hp ? "bg-[#eff6ff] text-[#1447e6]" : "hover:bg-[#eff6ff] hover:text-[#1447e6]"}`} href='/'>Home</a>
-          <a className={`transition duration-200 p-2 rounded-md ${pr ? "bg-[#eff6ff] text-[#1447e6]" : "hover:bg-[#eff6ff] hover:text-[#1447e6]"}`} href='/products'>See our products</a>
+        <div className={`hidden md:flex h-18 items-center text-l gap-3 pl-15 pr-15 justify-between shadow ${hp ? "bg-[#F5F5F5]": "bg-[#001433]"}`}>
+          <img src={hp ? "LogoC.png" : "Logo.png"}  width='13%'/>
+          <div className={`flex gap-5 text-white font-[Impact] text-xl`}>
+          <a className={`transition duration-200 p-2 rounded-md ${hp ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/'>Home</a>
+          <a className={`transition duration-200 p-2 rounded-md ${pr ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>See our products</a>
+          <a className={`transition duration-200 p-2 rounded-md ${ab ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>About</a>
           </div>
-          <div className="pr-15 font-bold">React Collaborative Project</div>
+          
         </div>
       </nav>
 
       <nav>
-        <div className="flex md:hidden h-18 bg-white items-center text-l gap-3 justify-between shadow">
-          <a className={`ml-4 transition-transform duration-300 ${Menu ? "rotate-90" : "rotate-0"}`} onClick={() => setMenu(!Menu)}><MenuIcon/></a>
-          <div className="text-center pr-5">React Collaborative Project</div>
+        <div className={`flex md:hidden h-18 items-center text-l gap-3 justify-between shadow ${hp ? "bg-[#F5F5F5]": "bg-[#001433]"}`}>
+          <img src="Logo.png" width='50%'/>
+          <a className={`mr-6 transition-transform duration-300 text-white ${Menu ? "rotate-90" : "rotate-0"}`} onClick={() => setMenu(!Menu)}><MenuIcon/></a>
         </div>
-        {Menu ? 
-          <div className="flex flex-col bg-white px-4 pt-2 pb-2 gap-2" >
-            <a className={`p-2 rounded-md ${hp ? "bg-[#eff6ff] text-[#1447e6]" : "hover:bg-[#eff6ff] hover:text-[#1447e6]"}`} href="/">Home</a>
-            <a className={`p-2 rounded-md ${pr ? "bg-[#eff6ff] text-[#1447e6]" : "hover:bg-[#eff6ff] hover:text-[#1447e6]"}`} href="/products">See our products</a>
-          </div>: <></>}
+          <div className={`flex flex-col text-white bg-[#001433] px-4 gap-2 font-[Impact] text-xl duration-300 ease-in-out overflow-hidden ${Menu ? "max-h-45 py-2" : "max-h-0 py-0"}`}>
+            <a className={`p-2 rounded-md ${hp ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/">Home</a>
+            <a className={`p-2 rounded-md ${pr ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/products">See our products</a>
+            <a className={`p-2 rounded-md ${ab ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/about">About</a>
+          </div>
       </nav>
 
     </>

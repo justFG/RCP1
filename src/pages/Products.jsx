@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar/Navbar'
 import ProductCard from '../components/ProductCard.jsx';
 import './Products.css';
 import macbookImg from '../images/macbook.jpg';
@@ -54,6 +55,8 @@ const products = [
 
 const Products = () => {
   return (
+  <>
+    <Navbar pr={true}/>
     <div className="products-page">
       <h1 className="products-title">Our Laptops Collection</h1>
       <div className="products-grid">
@@ -62,6 +65,7 @@ const Products = () => {
         ))}
       </div>
     </div>
+  </>
   );
 };
 
