@@ -18,7 +18,7 @@ const Navbar = ({ hp, pr,ab }) => {
           <div className={`flex gap-5 ${hp ? "text-white" : "text-[#000000]"} font-[Impact] text-xl`}>
           <a className={`transition duration-200 p-2 rounded-md ${hp ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/'>Home</a>
           <a className={`transition duration-200 p-2 rounded-md ${pr ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>See our products</a>
-          <a className={`transition duration-200 p-2 rounded-md ${ab ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>About</a>
+          {/*<a className={`transition duration-200 p-2 rounded-md ${ab ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>About</a>*/}
           </div>
           
         </div>
@@ -32,7 +32,7 @@ const Navbar = ({ hp, pr,ab }) => {
           <div className={`flex flex-col ${hp ? "text-white" : "text-[#000000]"} ${hp ? "bg-[#001433]" : "bg-[#F5F5F5]"} px-4 gap-2 font-[Impact] text-xl duration-300 ease-in-out overflow-hidden ${Menu ? "max-h-45 py-2" : "max-h-0 py-0"}`}>
             <a className={`p-2 rounded-md ${hp ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/">Home</a>
             <a className={`p-2 rounded-md ${pr ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/products">See our products</a>
-            <a className={`p-2 rounded-md ${ab ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/about">About</a>
+            {/*<a className={`p-2 rounded-md ${ab ? "text-[#19CEE4]" : "hover:text-[#19CEE4]"}`} href="/about">About</a>*/}
           </div>
       </nav>
     </div>
