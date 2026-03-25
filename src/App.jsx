@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Homepage'
 import Products from './pages/Products'
+import Footer from './components/footer/Footer';
 import ProductDetails from './pages/ProductDetails';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="*" element={<>error 404</>} />
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
   )
 }
