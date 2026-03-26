@@ -18,7 +18,7 @@ const Navbar = ({ hp, pr,ab }) => {
           <div className={`flex gap-5 ${hp || ab ? "text-white" : "text-[#000000]"} font-[Impact] text-xl`}>
           <a className={`transition duration-200 p-2 rounded-md ${hp ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/'>Home</a>
           <a className={`transition duration-200 p-2 rounded-md ${pr ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>See our products</a>
-          <a className={`transition duration-200 p-2 rounded-md ${ab ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/products'>About</a>
+          <a className={`transition duration-200 p-2 rounded-md ${ab ? "text-[#19CEE4]" : " hover:text-[#19CEE4]"}`} href='/about'>About</a>
           </div>
           
         </div>

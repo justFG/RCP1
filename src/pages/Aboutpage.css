@@ -1,0 +1,132 @@
+
+
+.about-container {
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  background: linear-gradient(120deg, #081c3a 50%, #b3122d 100%);
+  font-family: Arial, sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+
+.about-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/*title*/
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #00e0ff;
+   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* intro*/
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #ccc;
+  line-height: 1.7;
+  font-size: 18px;
+   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  
+}
+
+
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+.about-card {
+  background: #0b0f2f;
+  padding: 30px;
+  border-radius: 20px;
+  flex: 1 1 350px;
+  border-left: 4px solid #00e0ff;
+
+  box-shadow: 
+    0 0 20px rgba(0, 224, 255, 0.2),
+    0 0 40px rgba(0, 224, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 0 30px rgba(0, 224, 255, 0.5),
+    0 0 60px rgba(0, 224, 255, 0.2);
+}
+
+.about-card h2 {
+  color: white;
+  margin-bottom: 15px;
+   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
+
+.about-card p {
+  color: #aaa;
+   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
+
+
+.about-values {
+  text-align: center;
+}
+
+.about-values h2 {
+  margin-bottom: 25px;
+   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+}
+
+/* badges */
+.values-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.value {
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.quality { background: #00e0ff; color: black; }
+.trust { background: #2ecc71; }
+.support { background: #f1c40f; color: black; }
+.innovation { background: #e74c3c; }
+
+/* hover */
+.value:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
