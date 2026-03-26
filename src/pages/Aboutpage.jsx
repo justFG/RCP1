@@ -4,7 +4,7 @@ import "./AboutPage.css";
 import Navbar from '../components/Navbar/Navbar'
 const AboutPage = () => {
   return (<>
-        <Navbar pr={true}/>
+        <Navbar ab={true}/>
   <div className="about-container">
         
       
