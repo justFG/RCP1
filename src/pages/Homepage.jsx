@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 
 const Homepage = () => {
   return (
-    <div><Navbar hp={true}/></div>
+    <div><Navbar ab={true}/></div>
   )
 }
 
