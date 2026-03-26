@@ -57,7 +57,7 @@ const Products = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="relative bg-linear-to-tr from-[#081637] via-[#081637] to-[#C70431] h-screen pt-5">
+      <div className="relative bg-linear-to-tr from-[#081637] via-[#081637] to-[#C70431] min-h-screen pt-5 pb-20">
         <h1 className="products-title">Our Products</h1>
         <div
           className="absolute inset-0 pointer-events-none"
@@ -77,7 +77,7 @@ const Products = () => {
         </div>
 
         <div
-          className="absolute cursor-pointer select-none left-1/2 -translate-x-1/2 md: mt-15 w-fit text-[#081637] font-[The_Blast] text-xl bg-[#19CEE4] px-10 py-5 transition duration-300 ease-in-out hover:bg-[rgb(7,149,168)]"
+          className="relative cursor-pointer select-none left-1/2 -translate-x-1/2 mt-10 md:mt-15 w-fit text-[#081637] font-[The_Blast] text-lg md:text-xl bg-[#19CEE4] px-8 md:px-10 py-4 md:py-5 transition duration-300 ease-in-out hover:bg-[rgb(7,149,168)] rounded-sm"
           onClick={() => navigate("/products")}
         >
           View products

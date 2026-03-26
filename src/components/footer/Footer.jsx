@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className='bg-[#081637] w-100% text-white p-10'>
         <hr />
-        <div className="detailsFooter flex items-center justify-around ">
+        <div className="detailsFooter flex flex-col md:flex-row items-center justify-around gap-8 md:gap-4 py-8">
             <img src="Logo.png" alt="" className='w-70 pr-20' />
             <div className="featureFoot  pt-20">
             <form className='flex items-center w-80 h-10 '>
