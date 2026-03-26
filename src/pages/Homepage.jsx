@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar/Navbar';
 import headerImage from '../images/homeImages/asus.webp'
 import { useNavigate } from "react-router-dom";
+import Productsection from '../components/Productsection/Productsection';
 
 
 const Homepage = () => {
@@ -44,6 +45,7 @@ const Homepage = () => {
         }} />
 
     </div>
+    <Productsection/>
   </>)
 }
 
