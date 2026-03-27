@@ -1,6 +1,6 @@
 
 import React from "react";
-import "./AboutPage.css"; 
+import "./Aboutpage.css"; 
 import Navbar from '../components/Navbar/Navbar'
 const AboutPage = () => {
   return (<>
